@@ -1,28 +1,38 @@
 // // index.js
-let ramenSelected = {
-  id: "",
-  name: "",
-  restaurant: "",
-  rating: "",
-  comment: ""
-};
+// let ramenCopied = {array[],};
+
 
 fetch("http://localhost:3000/ramens")
   .then(response=>response.json())
   .then(resConverted => {
-    resConverted.forEach((ramenImage)=>{
+    resConverted.forEach((ramen)=>{
       const icons = document.createElement("img");
-      icons.src = ramenImage.image;      
-      document.querySelector("#ramen-menu").append(icons)});
-    document.querySelector(`#ramen-menu`).addEventListener("click", (event)=>{
-      console.log(event.target);
-    });
+      icons.src = ramen.image;
+      icons.class = "menu-image";
+      document.querySelector("#ramen-menu").append(icons)
+    })
   });
+
+
   
+
+
+
+
+
+    
+
   
-  // Callbacks
+
+
+
+// document.querySelector(`#ramen-menu`).addEventListener("click", (event)=>{});
+  
+
+// Callbacks
 const handleClick = (ramen) => {
-  // Add code
+  let selected = ramen.image
+  //console.log(array);
 };
 
 const addSubmitListener = () => {

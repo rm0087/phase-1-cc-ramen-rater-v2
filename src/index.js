@@ -1,38 +1,34 @@
 // // index.js
-// let ramenCopied = {array[],};
+let array = [];
+let ramenSelected = {};
 
-
-fetch("http://localhost:3000/ramens")
+const first = () => {{fetch("http://localhost:3000/ramens")
   .then(response=>response.json())
   .then(resConverted => {
     resConverted.forEach((ramen)=>{
+      array.push(ramen);
       const icons = document.createElement("img");
+      icons.alt = ramen.id
       icons.src = ramen.image;
-      icons.class = "menu-image";
-      document.querySelector("#ramen-menu").append(icons)
-    })
+      console.log(icons.alt);
+      document.querySelector(`#ramen-menu`).append(icons);
+    });
   });
+}};
+first();
 
+document.querySelector("#ramen-menu").addEventListener("click", (event)=>{
+    handleClick(first, event);
+});
 
-  
-
-
-
-
-
-    
-
-  
-
-
-
-// document.querySelector(`#ramen-menu`).addEventListener("click", (event)=>{});
-  
+console.log(first);
 
 // Callbacks
-const handleClick = (ramen) => {
-  let selected = ramen.image
-  //console.log(array);
+const handleClick = (ramens, event) => {
+  ramens.forEach((ramen)=>{
+    if (event.target === ramen.image){console.log("SUCCESS!")}
+
+  });  
 };
 
 const addSubmitListener = () => {

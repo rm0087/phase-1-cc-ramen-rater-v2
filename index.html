@@ -20,9 +20,9 @@
 
 
   <div id="ramen-detail">
-    <img id = "test" class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 id = "test2" class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
+    <img id ="test" class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+    <h2 id="ramen-name" class= "name">Insert Name Here</h2>
+    <h3  id="restaurant-name" class="restaurant">Insert Restaurant Here</h3>
   </div>
 
   <h3>Rating:</h3>
@@ -37,16 +37,21 @@
 
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
-    <label for="new-name">Name: </label>
+    <label for="new-name">Ramen Name: </label>
     <input type="text" name="name" id="new-name" />
+    
     <label for="new-restaurant">Restaurant: </label>
     <input type="text" name="restaurant" id="new-restaurant" />
+    
     <label for="new-image">Image: </label>
     <input type="text" name="image" id="new-image" />
+    
     <label for="new-rating">Rating: </label>
     <input type="number" name="rating" id="new-rating" />
+    
     <label for="new-comment">Comment: </label>
     <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
+    
     <input type="submit" id='submit-button' value="Create" />
   </form>
 

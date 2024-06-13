@@ -1,9 +1,6 @@
 // // index.js
-
-
-
 let array = [];
-let newObject = {id:"", name:"", restaurant:"", image:"", rating:""};
+let newObject = {id:"", name:"", restaurant:"", image:"", rating:"", comment:""};
 
 document.querySelector("#ramen-menu").addEventListener("click", (event)=>{
     handleClick(event);
@@ -64,12 +61,10 @@ const main = () => {
   document.addEventListener("DOMContentLoaded", (event)=>{
     displayRamens();
     addSubmitListener();});
-  
 }
 main()
 
 // Export functions for testing
-
 export {
   displayRamens,
   addSubmitListener,

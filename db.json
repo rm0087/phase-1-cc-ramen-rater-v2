@@ -42,27 +42,11 @@
     },
     {
       "id": "6",
-      "name": "Miso Ramen",
-      "restaurant": "Lil' Tokyo",
-      "image": "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e9/Noodles_of_Wealth.png",
-      "rating": 9,
-      "comment": "Fly in soup but still good."
-    },
-    {
-      "id": "7",
-      "name": "Shio Ramen",
-      "restaurant": "Mt. Fuji",
-      "image": "https://images.ctfassets.net/3s5io6mnxfqz/1Q9nCWnIRCgcpKAUPCl4Ev/ca48188e9ddb84d7c0d3cc35ce369c1e/AdobeStock_254640691.jpeg",
-      "rating": 1,
-      "comment": "Meh"
-    },
-    {
-      "id": "8",
-      "name": "Weird Ramen",
+      "name": "Crazy Ramen",
       "restaurant": "Crazy Castle",
-      "image": "https://static.wikia.nocookie.net/yokaiwatch/images/b/b3/Saburo_Ramen_of_Hell.png",
-      "rating": 10,
-      "comment": "CRAZY GOOD!"
+      "image": "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e9/Noodles_of_Wealth.png",
+      "rating": 4,
+      "comment": "Too crazy for my liking..."
     }
   ]
 }
